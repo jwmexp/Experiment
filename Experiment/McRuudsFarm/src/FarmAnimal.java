@@ -1,7 +1,7 @@
 /**
  * Created by Rogier.
  */
-public class FarmAnimal {
+public abstract class FarmAnimal {
 
     protected String name;
     protected int chipNumber;
@@ -11,9 +11,7 @@ public class FarmAnimal {
         this.chipNumber = chipNumber;
     }
 
-    public void makeSound() {
-        System.out.println(name + " says ...");
-    }
+    abstract public void makeSound() ;
 
     public String getName() {
         return name;

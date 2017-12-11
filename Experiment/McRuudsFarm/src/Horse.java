@@ -9,6 +9,10 @@ public class Horse extends FarmAnimal {
         super(name, chipNumber);
         this.canJump = canJump;
     }
+    @Override
+        public void makeSound() {
+        System.out.println(name + " says HIIIIII");
+    }
 
     @Override
     public String toString() {
